@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open When Letters 💌</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #fff;
+        }
+        button {
+            background-color: #ff4d6d;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1e4d;
+        }
+        .letter {
+            background: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 15px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>💌 Open When Digital Letters 💌</h1>
+<p>For the one who owns my heart ❤️</p>
+
+<button onclick="showLetter(1)">Open when you miss me 💕</button>
+<button onclick="showLetter(2)">Open when you're sad 😔</button>
+<button onclick="showLetter(3)">Open when you're happy 😊</button>
+<button onclick="showLetter(4)">Open when you can't sleep 🌙</button>
+
+<div class="letter" id="letter"></div>
+
+<script>
+    function showLetter(choice) {
+        let text = "";
+        if (choice === 1) {
+            text = "If you're missing me right now, just know I'm holding you in my thoughts ❤️";
+        } else if (choice === 2) {
+            text = "Bad days don't last forever. I'm always proud of you 💖";
+        } else if (choice === 3) {
+            text = "Your happiness is my favorite thing in the world 🥰";
+        } else if (choice === 4) {
+            text = "Close your eyes and imagine me wishing you the sweetest dreams 🌙💫";
+        }
+        document.getElementById("letter").style.display = "block";
+        document.getElementById("letter").innerHTML = text;
+    }
+</script>
+
+</body>
+</html>
